@@ -1,22 +1,30 @@
-# Ближайшие бары
+# Nearest bars
 
-[FIXME. Здесь будет описание проекта]
+A program that takes json data file and outputs biggest bar,
+smallest bar and nearest bar by given coordinates(need user input)
 
-# Как запустить
+# Requirements
 
-Скрипт требует для своей работы установленного интерпретатора Python версии 3.5
+`Python 3.5`
 
-Запуск на Linux:
+# Run
 
 ```bash
 
-$ python bars.py # possibly requires call of python3 executive instead of just python
-# FIXME вывести пример ответа скрипта
+$ python3 bars.py <path to json file>
 
 ```
 
-Запуск на Windows происходит аналогично.
+# Sample output:
 
-# Цели проекта
+```
+Biggest bar:  Спорт бар «Красная машина»
+Smallest bar:  БАР. СОКИ
+enter longitude > 37.757857349577243
+enter latitude > 55.823641647462409
+Nearest bar:  БАР «ПИВМАГ»
+```
 
-Код создан в учебных целях. В рамках учебного курса по веб-разработке - [DEVMAN.org](https://devman.org)
+# Project Goals
+
+The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)

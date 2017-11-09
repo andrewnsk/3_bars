@@ -20,7 +20,7 @@ def get_smallest_bar(json_data):
 
 def _get_distance(user_location, bar_data):
     distance = (user_location[0] - bar_data['geometry']['coordinates'][0]) ** 2 + \
-             (user_location[1] - bar_data['geometry']['coordinates'][1]) ** 2
+               (user_location[1] - bar_data['geometry']['coordinates'][1]) ** 2
     return distance
 
 
@@ -31,7 +31,6 @@ def get_closest_bar(_json_data, longitude, latitude):
 
 if __name__ == '__main__':
     json_data = load_data(sys.argv[1])
-    # print(json_data['features'])
     print('Biggest bar: ', get_biggest_bar(json_data)['properties']['Attributes']['Name'])
     print('Smallest bar: ', get_smallest_bar(json_data)['properties']['Attributes']['Name'])
     print('Nearest bar: ', get_closest_bar(json_data,

@@ -19,8 +19,8 @@ def get_smallest_bar(json_data):
 
 
 def _get_distance(user_location, bar_data):
-    distance = (user_location[0] - bar_data['geometry']['coordinates'][0]) ** 2 + \
-               (user_location[1] - bar_data['geometry']['coordinates'][1]) ** 2
+    _distance = (user_location[0] - bar_data['geometry']['coordinates'][0]) ** 2
+    distance = _distance + (user_location[1] - bar_data['geometry']['coordinates'][1]) ** 2
     return distance
 
 
